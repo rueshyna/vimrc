@@ -1,7 +1,7 @@
 " LargeFile: Sets up an autocmd to make editing large files work with celerity
-"   Author:		Charles E. Campbell, Jr.
-"   Date:		Sep 23, 2008
-"   Version:	4
+"   Author:             Charles E. Campbell, Jr.
+"   Date:               Sep 23, 2008
+"   Version:    4
 " GetLatestVimScripts: 1506 1 :AutoInstall: LargeFile.vim
 
 " ---------------------------------------------------------------------
@@ -15,13 +15,13 @@ set cpo&vim
 
 " ---------------------------------------------------------------------
 " Commands: {{{1
-com! Unlarge			call s:Unlarge()
-com! -bang Large		call s:LargeFile(<bang>0,expand("%"))
+com! Unlarge                    call s:Unlarge()
+com! -bang Large                call s:LargeFile(<bang>0,expand("%"))
 
 " ---------------------------------------------------------------------
 "  Options: {{{1
 if !exists("g:LargeFile")
- let g:LargeFile= 20	" in megabytes
+ let g:LargeFile= 20    " in megabytes
 endif
 
 " ---------------------------------------------------------------------
