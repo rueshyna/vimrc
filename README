@@ -5,6 +5,8 @@ Rueshyna's vimrc
 
 INSTALL
 
+cd ~
+mv vimrc .vim
 sh install.sh
 
 ---------------
