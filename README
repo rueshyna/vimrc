@@ -1,0 +1,19 @@
+=================
+2012/03/29
+Rueshyna's vimrc
+=================
+
+INSTALL
+
+sh install.sh
+
+---------------
+PLUGINS
+
+autoclose
+fugitive
+largefile
+nerdtree
+snipmate
+tagbar
+vim-ruby
