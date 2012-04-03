@@ -15,14 +15,19 @@ set listchars=tab:>\.,trail:\.,eol:¬,nbsp:% " set unprintable characters
 set expandtab           " Set tag to space
 "set mouse=a
 set enc=utf8
+
+" map key
 map j gj
 map k gk
+nmap + <C-W>+
+nmap - <C-W>-
+nmap <Right>  <C-w>>
+nmap <Left>  <C-w><
 
 " Set indent
 set sw=2
 set cino=
 set autoindent          " Auto indent
-
 
 "tagbar config
 let g:tagbar_autofocus = 2
