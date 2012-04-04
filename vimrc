@@ -16,6 +16,8 @@ set expandtab           " Set tag to space
 "set mouse=a
 set enc=utf8
 
+ca tb tabnew
+
 " map key
 map j gj
 map k gk
