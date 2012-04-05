@@ -31,6 +31,11 @@ set sw=2
 set cino=
 set autoindent          " Auto indent
 
-"tagbar config
+" tagbar config
 let g:tagbar_autofocus = 2
 let g:tagbar_width = 30
+
+" set folding
+set foldnestmax=3
+set foldcolumn=3
+loadview
