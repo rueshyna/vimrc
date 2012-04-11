@@ -39,3 +39,8 @@ let g:tagbar_width = 30
 set foldnestmax=3
 set foldcolumn=3
 loadview
+
+" vim for pig
+augroup filetypedetect 
+    au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
+augroup END 
