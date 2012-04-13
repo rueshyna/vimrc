@@ -48,5 +48,5 @@ augroup END
 " vim for latex
 let g:tex_flavor='latex'
 
-"
-let g:snippets_dir="./bundle/snipmate/snippets/,./custom/snipmate/"
+" set snipmate
+let g:snippets_dir="~/.vim/bundle/snipmate/snippets/,~/.vim/custom/snipmate/"
