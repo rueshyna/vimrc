@@ -44,3 +44,6 @@ loadview
 augroup filetypedetect 
     au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
 augroup END 
+
+" latex
+let g:tex_flavor='latex'
