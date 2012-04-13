@@ -26,7 +26,7 @@ nmap - <C-W>-
 nmap <Right>  <C-w>>
 nmap <Left>  <C-w><
 
-" Set indent
+" set indent
 set sw=2
 set cino=
 set autoindent          " Auto indent
@@ -45,5 +45,8 @@ augroup filetypedetect
     au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
 augroup END 
 
-" latex
+" vim for latex
 let g:tex_flavor='latex'
+
+"
+let g:snippets_dir="./bundle/snipmate/snippets/,./custom/snipmate/"
