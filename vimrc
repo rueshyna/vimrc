@@ -15,7 +15,7 @@ set listchars=tab:>\.,trail:\.,eol:¬,nbsp:% " set unprintable characters
 set expandtab           " Set tag to space
 "set mouse=a
 set enc=utf8
-set spell spelllang=en_us
+"set spell spelllang=en_us
 
 ca tb tabnew
 
