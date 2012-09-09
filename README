@@ -19,3 +19,7 @@ nerdtree
 snipmate
 tagbar
 vim-ruby
+vim-latex
+vim-gnuplot
+vim-pig
+surround
