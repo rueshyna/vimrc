@@ -51,3 +51,7 @@ let g:tex_flavor='latex'
 
 " set snipmate
 let g:snippets_dir="~/.vim/bundle/snipmate/snippets/,~/.vim/custom/snipmate/"
+
+" set Powerline
+ set laststatus=2
+ set fillchars+=stl:\ ,stlnc:\
