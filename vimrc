@@ -58,3 +58,6 @@ let g:snippets_dir="~/.vim/bundle/snipmate/snippets/,~/.vim/custom/snipmate/"
 
 " set autoclose
  let g:AutoClosePairs = "() {} [] \" \'"
+
+ let g:instant_markdown_slow = 1
+
