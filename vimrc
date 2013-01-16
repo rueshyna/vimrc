@@ -1,11 +1,12 @@
 
-call pathogen#infect('~/.vim/bundle')
+call pathogen#infect('~/.vim/bundle','./.vim_bundle')
+call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
 colorscheme rues
 
-set shell=/bin/bash     " Use bash shell
+set shell=/bin/bash      " Use bash shell
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
 set smartcase           " Do smart case matching
@@ -60,4 +61,3 @@ let g:snippets_dir="~/.vim/bundle/snipmate/snippets/,~/.vim/custom/snipmate/"
  let g:AutoClosePairs = "() {} [] \" \'"
 
  let g:instant_markdown_slow = 1
-
