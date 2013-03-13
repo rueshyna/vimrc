@@ -1,6 +1,8 @@
 
 call pathogen#infect('~/.vim/bundle','./.vim_bundle')
 call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
+
 syntax on
 filetype plugin indent on
 
@@ -61,3 +63,6 @@ let g:snippets_dir="~/.vim/bundle/snipmate/snippets/,~/.vim/custom/snipmate/"
  let g:AutoClosePairs = "() {} [] \" \'"
 
  let g:instant_markdown_slow = 1
+
+" set vimpress
+let VIMPRESS = 'BlogRues'
