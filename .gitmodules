@@ -58,3 +58,6 @@
 [submodule "bundle/conque-shell"]
 	path = bundle/conque-shell
 	url = git://github.com/vim-scripts/Conque-Shell.git
+[submodule "bundle/xmledit"]
+	path = bundle/xmledit
+	url = https://github.com/sukima/xmledit.git
