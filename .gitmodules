@@ -46,9 +46,6 @@
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = git://github.com/mattn/gist-vim.git
-[submodule "bundle/conque-shell"]
-	path = bundle/conque-shell
-	url = git://github.com/vim-scripts/Conque-Shell.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
@@ -58,3 +55,9 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = git://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/vimshell"]
+	path = bundle/vimshell
+	url = git@github.com:Shougo/vimshell.vim.git
+[submodule "bundle/vimproc.vim"]
+	path = bundle/vimproc.vim
+	url = git@github.com:Shougo/vimproc.vim.git
