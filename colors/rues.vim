@@ -24,9 +24,10 @@ set t_Co=256
  hi Text ctermfg=230 ctermbg=Black cterm=none
  hi NonText ctermfg=none ctermbg=Black cterm=none
  hi Normal ctermfg=230 ctermbg=Black cterm=none
- hi Search ctermfg=White ctermbg=Black cterm=none
+ hi Search ctermfg=Blue ctermbg=Black cterm=none
  hi Visual ctermfg=Black ctermbg=223 cterm=none
  hi LineNr ctermfg=230 ctermbg=17 cterm=none
+ hi CursorLineNr ctermfg=230 ctermbg=17 cterm=none
 
  hi Cursor ctermfg=White ctermbg=Gray cterm=none
  hi CursorLine ctermfg=Gray ctermbg=Black cterm=none
