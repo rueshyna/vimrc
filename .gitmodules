@@ -13,9 +13,6 @@
 [submodule "bundle/vim-pig"]
 	path = bundle/vim-pig
 	url = git://github.com/vim-scripts/pig.vim.git
-[submodule "bundle/vim-latex"]
-	path = bundle/vim-latex
-	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
 [submodule "bundle/vim-gnuplot"]
 	path = bundle/vim-gnuplot
 	url = git://github.com/vim-scripts/gnuplot.vim.git
@@ -40,15 +37,9 @@
 [submodule "bundle/vim-instant-markdown"]
 	path = bundle/vim-instant-markdown
 	url = git://github.com/suan/vim-instant-markdown.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = git://github.com/plasticboy/vim-markdown.git
 [submodule "bundle/gist"]
 	path = bundle/gist
 	url = git://github.com/mattn/gist-vim.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = git@github.com:scrooloose/syntastic.git
 [submodule "bundle/xmledit"]
 	path = bundle/xmledit
 	url = git@github.com:sukima/xmledit.git
@@ -66,4 +57,19 @@
 	url = git@github.com:oplatek/Conque-Shell.git
 [submodule "bundle/vim2hs"]
 	path = bundle/vim2hs
-	url = https://github.com/dag/vim2hs.git
+	url = git@github.com:dag/vim2hs.git
+[submodule "bundle/vim-hug-neovim-rpc"]
+	path = bundle/vim-hug-neovim-rpc
+	url = git@github.com:roxma/vim-hug-neovim-rpc.git
+[submodule "bundle/nvim-yarp"]
+	path = bundle/nvim-yarp
+	url = git@github.com:roxma/nvim-yarp.git
+[submodule "bundle/deoplete.nvim"]
+	path = bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim.git
+[submodule "bundle/neco-ghc"]
+	path = bundle/neco-ghc
+	url = git@github.com:eagletmt/neco-ghc.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = git@github.com:w0rp/ale.git

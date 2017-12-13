@@ -22,7 +22,7 @@ set enc=utf8
 "set spell spelllang=en_us
 set hlsearch
 set backspace=2
-set clipboard=unnamed
+"set clipboard=unnamed
 
 ca tb tabnew
 
@@ -50,7 +50,7 @@ set foldmethod=indent
 set foldlevel=3
 set foldnestmax=3
 set foldcolumn=3
-loadview
+silent! loadview
 
 " vim for pig
 augroup filetypedetect 
@@ -97,4 +97,12 @@ nnoremap <C-n> :call NumberToggle()<cr>
 let g:syntastic_haskell_ghc_mod_exec = 'ghc-mod.sh'
 
 " NERDTree
-let g:NERDTreeShowHidden=1
+let g:NERDTreeShowHidden = 1
+
+let g:deoplete#enable_at_startup = 1
+
+" Disable haskell-vim omnifunc
+let g:haskellmode_completion_ghc=0
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+let g:necoghc_enable_detailed_browse=1
+let g:necoghc_use_stack=1
