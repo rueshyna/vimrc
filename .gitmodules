@@ -49,9 +49,6 @@
 [submodule "bundle/vimshell"]
 	path = bundle/vimshell
 	url = git@github.com:Shougo/vimshell.vim.git
-[submodule "bundle/vimproc.vim"]
-	path = bundle/vimproc.vim
-	url = git@github.com:Shougo/vimproc.vim.git
 [submodule "bundle/conque-shell"]
 	path = bundle/conque-shell
 	url = git@github.com:oplatek/Conque-Shell.git
@@ -67,9 +64,21 @@
 [submodule "bundle/deoplete.nvim"]
 	path = bundle/deoplete.nvim
 	url = git@github.com:Shougo/deoplete.nvim.git
-[submodule "bundle/neco-ghc"]
-	path = bundle/neco-ghc
-	url = git@github.com:eagletmt/neco-ghc.git
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = git@github.com:w0rp/ale.git
+[submodule "bundle/vimproc.vim"]
+	path = bundle/vimproc.vim
+	url = git@github.com:Shougo/vimproc.vim.git
+[submodule "bundle/vim-qf_resize"]
+	path = bundle/vim-qf_resize
+	url = git@github.com:blueyed/vim-qf_resize.git
+[submodule "bundle/intero-neovim"]
+	path = bundle/intero-neovim
+	url = git@github.com:parsonsmatt/intero-neovim.git
+[submodule "bundle/vim-plugin-AnsiEsc"]
+	path = bundle/vim-plugin-AnsiEsc
+	url = git@github.com:powerman/vim-plugin-AnsiEsc.git
+[submodule "bundle/oceanic-material"]
+	path = bundle/oceanic-material
+	url = git@github.com:glepnir/oceanic-material.git
