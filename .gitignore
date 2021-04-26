@@ -1,2 +1,4 @@
 *.swp
 view
+build
+plugged/
