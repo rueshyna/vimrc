@@ -35,6 +35,7 @@ set backspace=2
 " for ocaml
 nmap <leader>d :MerlinDestruct<CR>
 nmap <leader>r :MerlinRename
+nmap <leader>e :MerlinErrorCheck<return>
 syntax sync minlines=2000
 
 ca tb tabnew
@@ -147,3 +148,13 @@ for tool in s:opam_packages
   endif
 endfor
 " ## end of OPAM user-setup addition for vim / base ## keep this line
+
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+call plug#end()
+
+let g:fzf_preview_window = ['right:80%', 'ctrl-/']

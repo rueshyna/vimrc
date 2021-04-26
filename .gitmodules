@@ -82,3 +82,9 @@
 [submodule "bundle/oceanic-material"]
 	path = bundle/oceanic-material
 	url = git@github.com:glepnir/oceanic-material.git
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
+[submodule "bundle/fzf.vim"]
+	path = bundle/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
