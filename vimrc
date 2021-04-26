@@ -1,10 +1,21 @@
-
 call pathogen#infect('~/.vim/bundle','./.vim_bundle')
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 syntax on
 filetype plugin indent on
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+
+call plug#end()
+
+let g:fzf_preview_window = ['right:80%', 'ctrl-/']
 
 "colorscheme rues
 set background=dark
@@ -55,10 +66,6 @@ nmap <Left>  <C-w><
 set sw=2
 set autoindent          " Auto indent
 
-" tagbar config
-let g:tagbar_autofocus = 2
-let g:tagbar_width = 30
-
 " set folding
 set foldmethod=indent
 set foldlevel=3
@@ -66,22 +73,9 @@ set foldnestmax=3
 set foldcolumn=3
 silent! loadview
 
-" vim for latex
-let g:tex_flavor='latex'
-
-" set snipmate
-let g:snippets_dir="~/.vim/bundle/snipmate/snippets/,~/.vim/custom/snipmate/"
-
-" set Powerline
-set laststatus=2
-set fillchars+=stl:\ ,stlnc:\
-
 " set auto-pair
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutJump='<M-j>'
-
-let g:instant_markdown_slow = 1
-let g:instant_markdown_autostart = 0
 
 set breakindent
 "set showbreak=--
@@ -99,23 +93,10 @@ nnoremap <C-n> :call NumberToggle()<cr>
 " NERDTree
 let g:NERDTreeShowHidden = 1
 
-let g:deoplete#enable_at_startup = 1
-
-" Disable haskell-vim omnifunc
-"let g:haskellmode_completion_ghc=0
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-let g:necoghc_enable_detailed_browse=1
-let g:necoghc_use_stack=1
-
 let g:ale_lint_on_text_changed='normal'
 let g:ale_lint_on_enter=1
 let g:ale_linters = {'haskell':[]}
 
-let g:qf_resize_max_ratio=0.2
-"let g:ghcmod_max_preview_size=3
-
-"autocmd FileType haskell GhcModCheckAndLintAsync
-"autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 " ## added by OPAM user-setup for vim / base ## 93ee63e278bdfc07d1139a748ed3fff2 ## you can edit, but keep this line
 let s:opam_share_dir = system("opam config var share")
 let s:opam_share_dir = substitute(s:opam_share_dir, '[\r\n]*$', '', '')
@@ -148,13 +129,3 @@ for tool in s:opam_packages
   endif
 endfor
 " ## end of OPAM user-setup addition for vim / base ## keep this line
-
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-
-call plug#end()
-
-let g:fzf_preview_window = ['right:80%', 'ctrl-/']
