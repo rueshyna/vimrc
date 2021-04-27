@@ -1,1 +1,0 @@
-/Users/rueshyna/.vim/vimrc
