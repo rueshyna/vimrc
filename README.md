@@ -6,8 +6,6 @@
 ##INSTALL
 
 
-``cd ~``
+``git clone git://github.com/rueshyna/vimrc.git ~/.vim``
 
-``git clone git://github.com/rueshyna/vimrc.git .vim``
-
-``sh ~/.vim/install.sh``
+- Several tools needs to be installed, see https://github.com/junegunn/fzf.vim
