@@ -1,7 +1,3 @@
-call pathogen#infect('~/.vim/bundle','./.vim_bundle')
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-
 syntax on
 filetype plugin indent on
 
@@ -12,10 +8,23 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'w0rp/ale'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'glepnir/oceanic-material'
+Plug 'tpope/vim-surround'
+Plug 'skwp/vim-easymotion'
 
 call plug#end()
 
-let g:fzf_preview_window = ['right:80%', 'ctrl-/']
+let g:fzf_preview_window = ['right:80%:hidden', 'ctrl-/']
+nmap <Leader>f :Files!<CR>
+nmap <Leader>ft :Files! src/proto_alpha/lib_protocol/<CR>
+nmap <Leader>a :Rg!<CR>
+
+au BufNewFile,BufRead *.fr set spell spelllang+=fr
+au BufNewFile,BufRead *.mk set spell spelllang+=en
 
 "colorscheme rues
 set background=dark
@@ -82,13 +91,30 @@ set breakindent
 
 function! NumberToggle()
   if(&relativenumber == 1)
-    set number
+    set norelativenumber
   else
     set relativenumber
   endif
 endfunc
 
-nnoremap <C-n> :call NumberToggle()<cr>
+nmap <leader>l :call NumberToggle()<cr>
+
+function! LayoutToggle()
+  if(&nu== 1)
+    set nonu
+    set nobreakindent
+    set listchars&
+    set nofoldenable
+  else
+    set nu
+    set breakindent
+    set listchars=tab:>\-,trail:\.,eol:¬,nbsp:% " set unprintable characters
+    set foldmethod=indent
+    silent! loadview
+  endif
+endfunc
+
+nmap <leader>lt :call LayoutToggle()<cr>
 
 " NERDTree
 let g:NERDTreeShowHidden = 1
