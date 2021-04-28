@@ -15,6 +15,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'glepnir/oceanic-material'
 Plug 'tpope/vim-surround'
 Plug 'skwp/vim-easymotion'
+Plug 'dpelle/vim-Grammalecte'
 
 call plug#end()
 
@@ -85,6 +86,8 @@ silent! loadview
 " set auto-pair
 let g:AutoPairsFlyMode = 1
 let g:AutoPairsShortcutJump='<M-j>'
+
+let g:grammalecte_cli_py='~/.local/dev/Grammalecte-fr-v2.0.0/grammalecte-cli.py'
 
 set breakindent
 "set showbreak=--
